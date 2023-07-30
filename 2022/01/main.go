@@ -11,7 +11,7 @@ import (
 //go:embed input.txt
 var input string
 
-func part_one() {
+func partOne() {
 	max := 0
 
 	for _, elf := range strings.Split(input, "\n\n") {
@@ -30,7 +30,7 @@ func part_one() {
 	fmt.Println(max)
 }
 
-func part_two() {
+func partTwo() {
 	var elves []int
 
 	for _, elf := range strings.Split(input, "\n\n") {
@@ -53,6 +53,6 @@ func part_two() {
 }
 
 func main() {
-	// part_one()
-	part_two()
+	// partOne()
+	partTwo()
 }
